@@ -60,7 +60,7 @@ The solution is composed of three main layers:
 
 ### 1. Clone the repository
 ```bash
-git clone <repository-url>
+git clone (https://github.com/adrianacarvsilva/ai-agent-calculator-artefact.git)
 cd ai-agent-calculator-artefact
 
 ```
