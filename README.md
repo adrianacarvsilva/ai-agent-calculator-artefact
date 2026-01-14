@@ -86,15 +86,15 @@ pip install -r requirements.txt
 
 ```
 
-4. Configure environment variables
+### 4. Configure environment variables
+
+Create a `.env` file in the project root directory and add your Hugging Face API token:
 
 ```bash
-
 HUGGINGFACEHUB_API_TOKEN=your_token_here
-
 ```
 
-5. Run the AI agent
+### 5. Run the AI agent
 
 ```bash
 
