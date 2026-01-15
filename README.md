@@ -60,7 +60,7 @@ The solution is composed of three main layers:
 
 ### 1. Clone the repository
 ```bash
-git clone (https://github.com/adrianacarvsilva/ai-agent-calculator-artefact.git)
+git clone https://github.com/adrianacarvsilva/ai-agent-calculator-artefact.git
 cd ai-agent-calculator-artefact
 
 ```
@@ -108,5 +108,19 @@ python -m app.main
 python -m pytest app/tests/test_agent.py
 
 ```
+
+## ✨ What I would improve with more time
+
+With more time, I would evolve the solution in the following ways:
+
+- Introduce an explicit intent classifier (e.g. math, text, mixed) before the main prompt, reducing reliance on the model’s implicit behavior and increasing the predictability of the execution flow.
+
+- Structure model outputs using typed formats, such as JSON objects, instead of free-form text. This would reduce coupling to the LLM, eliminate manual text parsing, and make the system more robust and maintainable.
+
+- Add more automated tests, including scenarios involving linguistic ambiguity, malicious inputs, and edge cases, to improve reliability and application safety.
+
+- Implement an observability layer, with structured logs, error metrics, and latency tracking, enabling better monitoring of the agent’s behavior across different decision paths.
+
+- Evaluate and replace the current model, prioritizing an LLM with stronger adherence to output contracts and more reliable support for agents and tool usage. This would allow for simpler prompts and cleaner routing logic.
 
 
